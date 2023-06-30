@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+        <script type="text/javascript" src="js.js">
+        function demoInternalAlret(){
+            alert("Internal alret. ");
+        }
+
+        function demoInternalConfirm(){
+            if(confirm("Are you sure..??")){
+                alert("YESS");
+            }
+            else{
+                alert("NOOOO");
+            }
+        }
+        function demoInternalPrompt(){
+           var fName= prompt("Enter firstname Here..");
+           var lName=prompt("Enter last name");
+           alert(fNAme+""+lName);
+        }
+        function divBGDynamic(){
+            document.getElementById("D1").
+            style.background=prompt("Enter color name here...")
+        }
+        function bodyBGDynamic(){
+            document.body.style.accentColor
+            backgroundColor=prompt("Enter color name here...");
+        }
+        function bodyBGCP1(){
+            document.body.style.
+            backgroundColor=document.
+            getElementById("CP1").value;
+        }
+        function bodyBGCP2(){
+            document.getElementById("D1")
+            backgroundColor=document.
+            getElementById("CP2").value;
+        }
+        function bodyBGGren(){
+            document.body.style.
+                backgroundColor=document.
+                getElementColor="Green"
+        }
+        function divBGGray(){
+            document.getElementById("D1")
+              style.backgroundColor="Gray";
+        }
+        
+
+        </script>
+        
+</head>
+<body>
+    <div id="D1">
+        Hello Student
+    </div>
+    <hr/>
+    <input type="button" value="Alert Inline" onclick="alert('Hello Guys')"/>&nbsp;&nbsp;
+    <input type="button" value="confirm Inline" onclick="confirm('Are you Sure..??')"/>&nbsp;&nbsp;
+    <input type="button" value="prompt Inline" onclick="prompt('Enter firstname Here ..??')"/>&nbsp;&nbsp;
+    <hr/>
+    <input type="button" value="Alert Internal" onclick="demoInternalAlert()"/>&nbsp;&nbsp;
+    <input type="button" value="confirm Internal" onclick="demoInternalConfirm()"/>&nbsp;&nbsp;
+    <input type="button" value="prompt Internal" onclick="demoInternalAlert()"/>&nbsp;&nbsp;
+    <hr/>
+    <input type="button" value="Alert External" onclick="demoExternalAlert()"/>&nbsp;&nbsp;
+    <input type="button" value="confirm  External" onclick="demoExternalConfirm()"/>&nbsp;&nbsp;
+    <input type="button" value="prompt  External" onclick="demoExternalPrompt()"/>&nbsp;&nbsp;
+    <hr/>
+</body>
+</html>
