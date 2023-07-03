@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width="device-width", initial-scale=1.0"> -->
+    <title>Demo jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#TxtTestFocus").focus(function(
+            ){
+            $(this).css("background-color","pink");
+        });
+            $("#TxtTestBlur").blur(function(){
+            $(this).css("background-color","purple");
+        });
+            $("#TxtTestKeyPress").keypress(function(){
+            alert($(this).val());
+        });
+            $("#TxtTestKeyUp").keyup(function()
+        {
+            alert($(this).val());
+        });
+        });   
+    </script>
+</head>
+<body>
+    <input type="text" id="TxtTestFocus"
+    placeholder="Check text Box focus Event..." /><hr/>
+    <input type="text" id="TxtTestBlur"
+    placeholder="Check text Box Blur Event..." /><hr/>  
+    <input type="text" id="TxtTestKeyPress"
+    placeholder="Check text Box key  press..." /><hr/>  
+    <input type="text" id="TxtTestKeyUp"
+    placeholder="Check text Box key Up..." /><hr/>      
+</body>
+</html>
